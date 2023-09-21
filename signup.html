@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation Example</title>
+   
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form method="post" onsubmit="return validateForm()">
+        <label for="First name">First Name :</label>
+        <input type="text" placeholder="Enter Your First Name" name="name" required minlength="3"><br><hr>
+
+        <label for="Last Name ">Last Name :</label>
+        <input type="text" name="Last Name" placeholder="Enter Your Last Name" required minlength="3"><br><hr>
+        <label for="email ">Email :</label>
+        <input type="email" name="email" placeholder="Enter Your Email" required minlength="3"><br> <hr>
+        <label for="password">Password :</label>
+        <input type="password" name="password" placeholder="Enter Your Password" required><br>
+        <label for="confirm password">Confirme Password :</label>
+        <input type="password" name="password" placeholder="Confirme Your Password" required><br><hr>
+        <label for="Age">Enter Your Age :</label>
+        <input type="text" name="Age" placeholder="Enter Your Age" required minlength="0" maxlength="150"><br><hr>
+        <label for="gender">Gender :</label>
+        <input type="radio" name="gender" value="female"/>Female
+        <input type="radio" name="gender" value="Male"/>Male <br><hr>
+        <input type="submit" value="Sign up"><br>
+        </form>
+
+</body>
+</html>
